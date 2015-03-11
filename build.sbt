@@ -45,6 +45,8 @@ lazy val example = project.in(file("example")).dependsOn(core, postgres, specs2,
 
 lazy val postgres = project.in(file("contrib/postgresql")).dependsOn(core)
 
+lazy val mysql = project.in(file("contrib/mysql")).dependsOn(core)
+
 lazy val h2 = project.in(file("contrib/h2")).dependsOn(core)
 
 lazy val hikari = project.in(file("contrib/hikari")).dependsOn(core)
